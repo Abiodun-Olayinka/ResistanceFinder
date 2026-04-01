@@ -1,0 +1,4 @@
+qtl_id,chromosome,start,end,lod_score,reference,doi
+qTR4-3,3,25000000,35000000,3.9,"Chen, A. et al. (2023) - Major QTL on distal long arm of chromosome 3 (Musa acuminata ssp. malaccensis)",10.3390/pathogens12020289
+qTR4-6_demo,6,15000000,25000000,5.2,Demo/Simulated - Based on general literature (see Banana Genome Hub),Demo - Not applicable
+qTR4-10_demo,10,5000000,15000000,4.8,Demo/Simulated - Based on general literature (see Banana Genome Hub),Demo - Not applicable

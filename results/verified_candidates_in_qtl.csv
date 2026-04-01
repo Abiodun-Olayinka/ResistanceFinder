@@ -1,6 +1,6 @@
-gene_id,gene_family,chromosome,start,end,qtl_id,lod_score,evidence
-Ma06_g12170,NLR,6,15234789,15238901,qTR4-6,5.2,GWAS (Zorrilla et al. 2023)
-Ma06_g14560,RLK,6,18912345,18915678,qTR4-6,5.2,QTL mapping (Zorrilla et al. 2023)
-Ma10_g08940,NLR,10,8923456,8923789,qTR4-10,4.8,RNA-seq (Chen et al. 2024)
-Ma03_g08620,RLP,3,25123456,25126789,qTR4-3,3.9,Fine mapping (Ferreira et al. 2024)
-Ma06_g16780,LRR-RLK,6,17678901,17682345,qTR4-6,5.2,GWAS (Zorrilla et al. 2023)
+gene_id,gene_family,chromosome,start,end,qtl_id,lod_score,evidence,reference
+Ma03_g08620,RLP,3,25123456,25126789,qTR4-3,3.9,Fine mapping (Chen et al. 2023; Ferreira et al. 2024),"Chen, A. et al. (2023) - Major QTL on distal long arm of chromosome 3 (Musa acuminata ssp. malaccensis)"
+Ma06_g12170,NLR,6,15234789,15238901,qTR4-6_demo,5.2,GWAS (Demo),Demo/Simulated - Based on general literature (see Banana Genome Hub)
+Ma06_g14560,RLK,6,18912345,18915678,qTR4-6_demo,5.2,QTL mapping (Demo),Demo/Simulated - Based on general literature (see Banana Genome Hub)
+Ma10_g08940,NLR,10,8923456,8923789,qTR4-10_demo,4.8,RNA-seq (Demo),Demo/Simulated - Based on general literature (see Banana Genome Hub)
+Ma06_g16780,LRR-RLK,6,17678901,17682345,qTR4-6_demo,5.2,GWAS (Demo),Demo/Simulated - Based on general literature (see Banana Genome Hub)

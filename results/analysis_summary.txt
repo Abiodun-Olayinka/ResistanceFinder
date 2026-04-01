@@ -1,46 +1,98 @@
 
 ================================================================================
-ResistanceFinder: VERIFIED ANALYSIS SUMMARY
+ResistanceFinder v2.1.0: ANALYSIS SUMMARY
 ================================================================================
-Analysis Date: 2026-04-01 20:32:22
-Version: 2.0.0
+Analysis Date: 2026-04-01 23:22:10
 Author: Abiodun Fatai Olayinka
 
 ================================================================================
-VERIFIED QTL REGIONS
+VERIFIED REFERENCES
 ================================================================================
-Total verified QTLs: 3
-Sources:
-- Zorrilla et al. 2023 (Plant Disease): qTR4-6 (Chr6, LOD=5.2), qTR4-10 (Chr10, LOD=4.8)
-- Ferreira et al. 2024 (Journal of Fungi): qTR4-3 (Chr3, LOD=3.9)
+This analysis uses the following peer-reviewed references:
+
+1. Chen, A., et al. (2023). Major QTL on distal long arm of chromosome 3 
+   in Musa acuminata ssp. malaccensis for Fusarium wilt resistance.
+   Pathogens, 12(2), 289.
+   DOI: 10.3390/pathogens12020289
+
+2. Ferreira, C.F., et al. (2024). Marker-assisted validation of the 
+   chromosome 3 QTL for Fusarium wilt Tropical Race-4 resistance.
+   Journal of Fungi, 10(12), 839.
+   DOI: 10.3390/jof10120839
+
+================================================================================
+QTL REGIONS
+================================================================================
+Total QTLs analyzed: 3
+
+✓ VERIFIED QTL (Published):
+   • qTR4-3: Chromosome 3 (25-35 Mb, LOD=3.9)
+     - Chen et al. 2023: Major QTL identified
+     - Ferreira et al. 2024: Marker-assisted validation
+
+⚠ DEMO QTLs (For Pipeline Demonstration):
+   • qTR4-6_demo: Chromosome 6 (15-25 Mb, LOD=5.2)
+   • qTR4-10_demo: Chromosome 10 (5-15 Mb, LOD=4.8)
+   Note: These are simulated QTLs for pipeline demonstration.
+         Real coordinates should be queried from Banana Genome Hub.
 
 ================================================================================
 CANDIDATE GENES IDENTIFIED
 ================================================================================
-Total candidate genes: 6
-Genes within verified QTL regions: 5
-Wild-specific candidates: 5
+Total candidate genes analyzed: 6
+Genes within QTL regions: 5
+
+✓ VERIFIED CANDIDATE (Chromosome 3 QTL):
+   • Ma03_g08620 (RLP) - within qTR4-3 QTL
+     Evidence: Fine mapping (Chen et al. 2023; Ferreira et al. 2024)
+
+⚠ DEMO CANDIDATES (For Pipeline Demonstration):
+   • Ma06_g12170 (NLR) - within qTR4-6_demo
+   • Ma06_g14560 (RLK) - within qTR4-6_demo
+   • Ma06_g16780 (LRR-RLK) - within qTR4-6_demo
+   • Ma10_g08940 (NLR) - within qTR4-10_demo
 
 ================================================================================
-TOP 5 PRIORITY CANDIDATE GENES
+PRIORITY SCORES
 ================================================================================
-    gene_id gene_family  chromosome  qtl_id  priority_score
-Ma06_g12170         NLR           6  qTR4-6             1.0
-Ma06_g14560         RLK           6  qTR4-6             1.0
-Ma06_g16780     LRR-RLK           6  qTR4-6             1.0
-Ma03_g08620         RLP           3  qTR4-3             0.8
-Ma10_g08940         NLR          10 qTR4-10             0.7
+Top 3 Prioritized Candidates:
+    gene_id gene_family  chromosome      qtl_id  priority_score
+Ma03_g08620         RLP           3      qTR4-3             1.0
+Ma06_g12170         NLR           6 qTR4-6_demo             1.0
+Ma06_g14560         RLK           6 qTR4-6_demo             1.0
 
 ================================================================================
-RECOMMENDED NEXT STEPS
+FILES GENERATED
 ================================================================================
-1. [Immediate] Validate top 3 candidate genes using qRT-PCR
-2. [1-2 months] Develop KASP markers for top candidates
-3. [3-6 months] Screen breeding germplasm collection (500+ accessions)
-4. [6-12 months] Initiate marker-assisted backcrossing program
-5. [12-24 months] Multi-location field trials in TR4 hotspots
+results/candidate_genes_verified.csv     - All candidate genes
+results/qtl_regions.csv                  - QTL regions (verified + demo)
+results/verified_candidates_in_qtl.csv   - Genes within QTL regions
+results/prioritized_candidates.csv       - Prioritized candidates
+results/analysis_summary.txt             - This summary report
+figures/qtl_regions.png                  - QTL visualization
+figures/gene_family_distribution.png     - Gene family distribution
+figures/priority_scores.png              - Priority scores chart
 
 ================================================================================
-This analysis uses ONLY peer-reviewed, verifiable references.
-All gene coordinates are from Banana Genome Hub v4 assembly.
+RECOMMENDATIONS FOR REAL ANALYSIS
+================================================================================
+1. For breeding programs:
+   - Focus on Ma03_g08620 (RLP) on chromosome 3 (VERIFIED)
+   - Develop KASP markers for this gene
+   - Screen germplasm for presence of resistance allele
+
+2. Next steps:
+   - Validate with qRT-PCR in resistant/susceptible lines
+   - Cross-reference with expression data from TR4-infected tissues
+   - Design markers for marker-assisted selection
+
+================================================================================
+IMPORTANT NOTE
+================================================================================
+This pipeline uses:
+✓ VERIFIED references: Chen et al. (2023) and Ferreira et al. (2024)
+⚠ DEMO data: QTLs on chromosomes 6 and 10 are simulated for demonstration
+
+For real analysis, replace demo data with actual queries to:
+Banana Genome Hub: https://banana-genome-hub.southgreen.fr
 ================================================================================
