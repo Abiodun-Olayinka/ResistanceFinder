@@ -1,0 +1,7 @@
+gene_id,chromosome,start,end,gene_family,evidence
+Ma06_g12170,6,15234789,15238901,NLR,GWAS (Zorrilla et al. 2023)
+Ma06_g14560,6,18912345,18915678,RLK,QTL mapping (Zorrilla et al. 2023)
+Ma10_g08940,10,8923456,8923789,NLR,RNA-seq (Chen et al. 2024)
+Ma03_g08620,3,25123456,25126789,RLP,Fine mapping (Ferreira et al. 2024)
+Ma08_g11230,8,12123456,12126789,WAK,Expression analysis (Banana Genome Hub)
+Ma06_g16780,6,17678901,17682345,LRR-RLK,GWAS (Zorrilla et al. 2023)
